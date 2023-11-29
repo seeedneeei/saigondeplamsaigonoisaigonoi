@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function () {
         "Sài Gòn đẹp lắm",
         "Sài Gòn ơi",
         "Sài Gòn ơi!",
-        "lalala",
+        "lalala"
 
     ];
 
