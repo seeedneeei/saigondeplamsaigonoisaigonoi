@@ -12,14 +12,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     const delay = 33; 
     const lyricsElement = document.getElementById("lyrics");
-    const imageContainer = document.getElementById("imageContainer");
 
-    const imageElement = document.createElement("img");
-
-    imageElement.src = "https://image.lag.vn/upload/news/23/11/28/meme-josh-hutcherson-la-gi-2_EJFZ.jpg";
-
-    imageElement.style.width = "300px";
-    imageElement.style.height = "200px";
 
     async function displayLyrics() {
         for (const line of lyrics) {
@@ -37,10 +30,18 @@ document.addEventListener("DOMContentLoaded", function () {
             await new Promise((resolve) => setTimeout(resolve, delay * 10));
         }
 
-        imageElement.style.display =  "block";
-        lyricsElement.appendChild(imageElement);
+        //This should display image at the end
+        const imageContainer = document.getElementById("imageContainer");
+
+        const imageElement = document.createElement("img");
+    
+        imageElement.src = "https://image.lag.vn/upload/news/23/11/28/meme-josh-hutcherson-la-gi-2_EJFZ.jpg";
+    
+        imageElement.style.width = "300px";
+        imageElement.style.height = "200px";
+    
+        imageContainer.appendChild(imageElement);
     }
 
     displayLyrics();
 });
-
