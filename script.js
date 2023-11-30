@@ -21,8 +21,6 @@ document.addEventListener("DOMContentLoaded", function () {
     imageElement.style.width = "300px";
     imageElement.style.height = "200px";
 
-    imageContainer.appendChild(imageElement);
-
     async function displayLyrics() {
         for (const line of lyrics) {
             for (const char of line) {
@@ -38,6 +36,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
             await new Promise((resolve) => setTimeout(resolve, delay * 10));
         }
+
+        imageElement.style.display =  "block";
+        lyricsElement.appendChild(imageElement);
     }
 
     displayLyrics();
