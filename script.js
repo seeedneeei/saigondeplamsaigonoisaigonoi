@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const lyrics = [
         "Ngựa xe như nước trên đường vẫn qua mau",
         "Người ra thăm bến câu chào nói lao xao",
-        "Phố xa thênh thang đón chânn tôi đến chung vui",
+        "Phố xa thênh thang đón chân tôi đến chung vui",
         "Sài Gòn đẹp lắm",
         "Sài Gòn ơi",
         "Sài Gòn ơi!",
