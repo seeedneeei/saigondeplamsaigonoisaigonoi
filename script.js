@@ -12,6 +12,16 @@ document.addEventListener("DOMContentLoaded", function () {
 
     const delay = 33; 
     const lyricsElement = document.getElementById("lyrics");
+    const imageContainer = document.getElementById("imageContainer");
+
+    const imageElement = document.createElement("img");
+
+    imageElement.src = "https://image.lag.vn/upload/news/23/11/28/meme-josh-hutcherson-la-gi-2_EJFZ.jpg";
+
+    imageElement.style.width = "300px";
+    imageElement.style.height = "200px";
+
+    imageContainer.appendChild(imageElement);
 
     async function displayLyrics() {
         for (const line of lyrics) {
