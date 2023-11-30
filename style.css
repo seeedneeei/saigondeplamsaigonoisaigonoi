@@ -16,7 +16,7 @@ body {
 
 .text h1 {
     margin: -10%;
-    font-size: clamp(40px, 60vw, 60px);
+    font-size: clamp(30px, 50vw, 50px);
     text-align: center;
     padding: 10px 20px;
     font-weight: bold;
